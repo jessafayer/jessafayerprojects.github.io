@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Jessa Fayer's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Roboto:wght@400;700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #FEF6FB; /* Soft off-white pinkish background */
+            color: #4A2A4A; /* Deep mauve text color for contrast */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #FFD1DC; /* Soft pastel pink background */
+            color: #FFF;
+            padding: 40px 0;
+            text-align: center;
+            border-bottom: 5px solid #FAD0C4; /* Delicate border */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1, h2, h3 {
+            font-family: 'Parisienne', cursive;
+            color: #872955; /* Coquette aesthetic deep pink */
+            margin: 20px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #FFF;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #FF69B4; /* Bright pink on hover */
+        }
+        .project {
+            background-color: #FFFFFF; /* Pure white cards */
+            margin-bottom: 30px;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(250, 208, 196, 0.5); /* Soft shadow for depth */
+            border: 1px solid #FFD1DC; /* Soft pink border */
+            transition: transform 0.3s ease;
+        }
+        .project:hover {
+            transform: translateY(-10px); /* Subtle lift effect */
+            box-shadow: 0 15px 25px rgba(250, 208, 196, 0.7);
+        }
+        .project img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            margin-top: 15px;
+            border: 2px solid #FFD1DC; /* Soft pink image border */
+        }
+        .btn {
+            display: inline-block;
+            background-color: #FFA6C1; /* Coquette aesthetic button color */
+            color: #FFFFFF;
+            padding: 10px 20px;
+            border-radius: 25px; /* More pronounced rounded corners */
+            transition: background 0.3s, transform 0.3s;
+            margin: 10px 0;
+            text-decoration: none;
+            cursor: pointer;
+            border: 1px solid #FFD1DC; /* Delicate border for buttons */
+        }
+        .btn:hover {
+            background-color: #F78FA7;
+            transform: scale(1.05); /* Slightly enlarge buttons on hover */
+        }
+        .special-text {
+            font-size: 20px;
+            background: linear-gradient(to right, #FFD1DC, #FAD0C4, #FFD1DC);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 20px 0;
+        }
+        .lace-effect {
+            border-style: dotted; /* Lace-like dotted border */
+            border-width: 1px;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px auto;
+            max-width: 90%;
+        }
+        .highlight {
+            background-color: #FFD1DC;
+            color: #4A274F;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(250, 208, 196, 0.4);
+            transition: all 0.3s ease;
+        }
+        .highlight:hover {
+            box-shadow: 0px 6px 12px rgba(250, 208, 196, 0.6);
+            background-color: #FFC0E1;
+        }
+        .enchanted-project {
+    background-color: #FFF0F5; /* Soft pink background */
+    color: #604D53; /* Deep, muted pink for text for better readability */
+    border: 1px solid #FFC0CB; /* Light pink border */
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.enchanted-project h3 {
+    color: #D291BC; /* Soft violet for headings */
+}
+
+.enchanted-project .project-details {
+    margin-top: 20px;
+}
+
+.enchanted-project .project-image {
+    width: 100%;
+    max-width: 600px; /* Adjust based on layout */
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.enchanted-project .btn {
+    background-color: #D291BC; /* Soft violet */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.enchanted-project .btn:hover {
+    transform: scale(1.05);
+    background-color: #C878A1; /* Darker shade for hover */
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="special-text">Jessa Fayer's Projects</h1>
+            <nav>
+                <ul>
+                    <li><a href="indexxx.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="skills.html">Skills & Resume</a></li>
+                    <li><a href="projectsweb.html">Projects</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+       <!-- pong Game Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project one">
+                <h3>Pong Game</h3>
+                <p>Use the left and right arrow keys to move the paddle. Try to bounce the ball past your opponent's paddle to score.</p>
+                <canvas id="screen" width="600" height="400"></canvas>
+                <div id="score">Score: <span id="scoreValue">0</span></div>
+                <button class="btn" id="startBtn">Start Game</button>
+                <button class="btn" id="stopBtn">Stop Game</button>
+            </div>
+
+            <!-- StudyQuestz Game Section -->
+            <div class="project two">
+                <h3>StudyQuestz Game: Gamifying Learning</h3>
+                <p>Title: StudyQuestz Gamifying Learning ~ flash card game By Jessa Fayer Turn Studying into a Game for Better Grades</p>
+                <p>Engage with the flashcard game to enhance your learning experience!</p>
+                <div id="flashcardsContainer"></div>
+                <button class="btn" onclick="addFlashcard()">Add Flashcard</button>
+                <button class="btn" onclick="startQuiz()">Start Quiz</button>
+            </div>
+            <!-- INST442 FA2022 Group Project Section -->
+<div class="project three">
+    <h3>Digital Curation Odyssey: The 4-H National Council Archives Project</h3>
+    <p>Embark on a journey through the intricate and groundbreaking world of digital curation with our INST442 FA2022 Group Project. This expedition saw us navigating the vast digital landscape to safeguard the historical treasures of the 4-H National Council archives.</p>
+    <p>Our adventure was meticulously charted through six critical phases, each a beacon of innovation and digital stewardship:</p>
+    <ul>
+        <li><strong>Archival Reconnaissance:</strong> Our initial foray involved delving into the archives, identifying and cataloging records with precision and care. A pilgrimage to the CAFe Lab was essential to this endeavor.</li>
+        <li><strong>Lexical Crafting:</strong> We sculpted a lexicon of categories and controlled vocabulary, laying the foundation for a unified archival language.</li>
+        <li><strong>Standardization Saga:</strong> With insights from the guardians of 4-H history, we refined our classifications, ensuring each artifact's story would be coherently told.</li>
+        <li><strong>Digital Transmutation:</strong> Venturing once more into the CAFe Lab, we transformed selected analog relics into digital form, immortalizing their essence for future generations.</li>
+        <li><strong>Strategic Archival Futures:</strong> We envisaged the destiny of these digital treasures, plotting a course for their preservation and access in the digital realm.</li>
+        <li><strong>Culmination Chronicle:</strong> The final assembly of our digital dossiers and reflections marked the end of our quest, leaving a legacy of knowledge for the digital age.</li>
+        <img src="IMG_5177.jpg" alt="National Security Archive">
+        p>View the detailed documentation, learn more about our findings<a href="annotated-%5BGroup%201%20Librarians%5D%20Final%20Group%20Report-1.pdf" target="_blank">here</a>.</p>
+    <p>Through this odyssey, we not only preserved a piece of history but also paved the way for future digital curators. The 4-H National Council archives project stands as a testament to the power of collaboration, innovation, and digital foresight.</p>
+</div>
+         <!-- time managment -->
+            <div class="project four">
+            <div class="project time-management">
+                <h3>Master Your Time: Boost Productivity & Slash Stress</h3>
+                <p>Discover how our innovative app integrates your digital calendar with health data to revolutionize time management at the University of Maryland.</p>
+                <div class="project-images">
+                    <img src="IMG_5104.jpg" alt="Innovative Time Management">
+                    <img src="IMG_5105.jpg" alt="Design Process Insights">
+                    <img src="IMG_5106.jpg" alt="App Home Page">
+                </div>
+                <div class="project-details">
+                    <p>From athletes to student leaders, our tool is designed for every Terp. Delve into our design process, user feedback, and the resulting sleek app interface that turns overwhelming schedules into a manageable joy.</p>
+                    <a class="btn" href="https://sites.google.com/terpmail.umd.edu/timeforasolution/meet-our-team?authuser=0">Explore the Solution</a>
+                </div>
+            </div>
+            <div class="project enchanted-project">
+                <h3>Electric Dreamscape: The EV Revolution in Washington</h3>
+                <p>Embark on a journey through the electric dreamscape of Washington state, where the future of mobility blossoms with each passing mile. This project illuminates the accelerating shift towards Battery Electric Vehicles (BEVs) and Plug-in Hybrid Electric Vehicles (PHEVs), offering a comprehensive analysis of the burgeoning EV landscape. Our exploration into the database of registered electric marvels seeks to chart a course for a greener, more sustainable tomorrow.</p>
+                <div class="project-details">
+                    <p><strong>Database Odyssey:</strong> Navigate through our meticulously crafted logical design, a blueprint of our data-driven expedition into the electric vehicle domain. <img src="design.jpg" alt="Logical Design Image" class="project-image"></p>
+                    <p><strong>Physical Data Realm:</strong> Delve into the core of our database, where the essence of electric vehicles in Washington is captured in detail. From make and model to year and eligibility for the Clean Alternative Fuel Vehicle program, each entry is a testament to the evolving narrative of electric mobility. <img src="q.jpg" alt="Sample Data Image" class="project-image"></p>
+                </div>
+                <a class="btn" href="#">Explore the Electric Dreamscape</a>
+            </div>
+            
+            <div class="project four"></div>
+            <div class="project hairless-cat-info">
+                <h3>Discover the Enchanting World of Hairless Cats</h3>
+                <p>Embark on a journey to uncover the mystique of hairless cats. These unique felines, with their distinctive appearance and affectionate personalities, offer a fascinating pet ownership experience.</p>
+                
+                <div class="cat-facts">
+                    <h4>Did You Know?</h4>
+                    <ul>
+                        <li>Hairless cats, such as the Sphynx, are known for their warmth-seeking behavior, making them affectionate companions.</li>
+                        <li>Despite their lack of fur, they require regular bathing to remove skin oils.</li>
+                        <li>They're not actually hypoallergenic, as many believe, but their lack of fur reduces allergen spread.</li>
+                    </ul>
+                </div>
+                
+                <div class="care-tips">
+                    <h4>Care Tips for Your Hairless Companion</h4>
+                    <p>Learn how to provide the best care for your hairless cat, ensuring they live a happy, healthy life by your side.</p>
+                    <!-- Detailed care tips go here -->
+                </div>
+                
+                <div class="cat-gallery">
+                    <h4>Gallery of Elegance</h4>
+                    <img src="images/cat5.jpg" alt="Cute cat looking up">
+                    <img src="images/cat1.jpg" alt="Being mischievous">
+                    <img src="images/cat3.jpg" alt="Style icon">
+                </div>
+                
+                <p>Explore more about these captivating creatures on our dedicated <a href="file:///Users/jessicafayer/Downloads/final%20project/prog3.html">Hairless Cat Information Page</a>.</p>
+            </div>
+            <section id="projects">
+                <div class="container">
+                    <h2>Projects</h2>
+                    <!-- Previous Project Sections -->
+                    
+                    <div class="project five">
+                        <h3>Database Design for IT Job Market Insights</h3>
+                        <p>Our team embarked on creating a comprehensive database aimed at revolutionizing the IT job market, leveraging data from across Europe to offer deep insights into job trends, salaries, and valued skills. This project highlights the challenges and methodologies of database design and modeling, emphasizing the dynamic IT sector's demands.</p>
+                        <div class="database-report">
+                            <h4>Project Highlights:</h4>
+                            <ul>
+                                <li>Analysis of the "Polish IT Job Postings" dataset, refined to capture current trends</li>
+                                <li>Development of nine tables to detail every aspect of job postings</li>
+                                <li>Insights into salary trends, job distribution, and sought-after skills in the IT domain</li>
+                            </ul>
+                            <h4>Challenges and Solutions:</h4>
+                            <p>Our journey involved navigating through vast datasets, refining and normalizing data to ensure integrity and utility. Collaboration and expert consultations were pivotal in overcoming these challenges.</p>
+                            <h4>Future Directions:</h4>
+                            <p>With an eye towards global expansion, we aim to enrich our database with more granular data, including company profiles and job seeker resources, to foster a more inclusive and comprehensive IT job marketplace.</p>
+                        </div>
+                        <a class="btn" href="#">View Project Details</a>
+                        <section id="database-design">
+                            <div class="container">
+                                <h2>Database Design and Insights</h2>
+                                <p>This section outlines the SQL views created for the project and showcases the Entity-Relationship Diagram (ERD) for a comprehensive understanding of the database structure.</p>
+                                
+                                <h3>SQL Views</h3>
+                                <p>The following SQL code snippets illustrate the creation of various views within the database, designed to extract meaningful insights regarding IT job postings.</p>
+                                <pre>
+                        USE inst327project;
+                        
+                        -- Average salary for each job posting
+                        CREATE VIEW posting_average_salary AS
+                        SELECT 
+                            position.position_id, 
+                            title.name AS job_title,
+                            company_position_title.experience, 
+                            company_position_title.remote,
+                            (salary.salary_from + salary.salary_to) / 2 AS avg_salary,
+                            salary.currency
+                        FROM company_position_title
+                        JOIN title USING (title_id)
+                        JOIN position USING (position_id)
+                        LEFT JOIN salary USING (salary_id)
+                        ORDER BY avg_salary DESC;
+                        
+                        -- Additional SQL view creations here...
+                                </pre>
+                        
+                                <h3>Entity-Relationship Diagram (ERD)</h3>
+                                <p>The ERD below visually represents the database schema and relationships between tables:</p>
+                                <!-- If you have an image of the ERD, use the <img> tag to embed it. -->
+                                <img src="Untitled.png" alt="Entity-Relationship Diagram" style="max-width: 100%; height: auto;">
+                                
+                                <!-- If the ERD is not an image, provide a link or instructions on how to view it -->
+                                <p>View the detailed ERD documentation <a href="database-report.pdf" target="_blank">here</a>.</p>
+                            </div>
+                        </section>
+                        
+                    </div>
+        
+
+        </div>
+        <section id="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <!-- Existing Project Sections -->
+                <!-- "Which Doll Are You?" Game Section -->
+                <div class="project">
+                    <h3>Which Doll Are You? Interactive Personality Game</h3>
+                    <p>Embark on a delightful journey to discover which doll aligns with your unique personality. Select your favorite activity and let the magic unfold.</p>
+                    <div id="question-container">
+                        <p>Choose your favorite activity:</p>
+                        <button class="btn" data-activity="rain">Listening to Music in the Rain</button>
+                        <button class="btn" data-activity="candlelight">Relaxing by Candlelight</button>
+                        <button class="btn" data-activity="photos">Capturing Moments</button>
+                    </div>
+                    <div id="doll-container">
+                        <img src="default.png" id="doll-img" alt="Select an activity to see the doll">
+                        <p id="doll-description"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Database Views Documentation (Consider placing this content in an appropriate section or page related to database documentation or as a downloadable document) -->
+        <!--
+        USE inst327project;
+    
+        CREATE VIEW posting_average_salary AS ...
+        CREATE VIEW company_average_salary AS ...
+        CREATE VIEW polish_min_max_mean AS ...
+        CREATE VIEW jobs_per_country AS ...
+        CREATE VIEW remote_jobs_number AS ...
+        CREATE VIEW valued_skills AS ...
+        CREATE VIEW companies_above_avg_salary AS ...
+        -->
+    
+        <footer>
+            <div class="container">
+                <p>&copy; 2024 Jessa Fayer. All rights reserved.</p>
+            </div>
+        </footer>
+    
+        <script>
+            // Script for "Which Doll Are You?" Game
+            document.querySelectorAll('.btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    const activity = this.getAttribute('data-activity');
+                    selectDoll(activity);
+                });
+            });
+    
+            function selectDoll(activity) {
+                const dollDetails = {
+                    rain: { img: 'IMG_5147.jpg', desc: "You're reflective and find peace in the melody of raindrops." },
+                    candlelight: { img: 'IMG_5148.jpg', desc: "You're warm-hearted, enjoying the soft glow of candlelight." },
+                    photos: { img: 'IMG_5149.jpg', desc: "You're adventurous, seeking beauty in your surroundings." }
+                };
+    
+                const detail = dollDetails[activity];
+                document.getElementById('doll-img').src = detail.img;
+                document.getElementById('doll-description').textContent = detail.desc;
+            }
+    
+   
+</script>
+</body>
+</html>
+   
+
+    <script>
+        // Adjusted Pong Game Script with Start and Stop functionality
+        let gameInterval;
+        let gameStarted = false;
+
+        document.addEventListener('DOMContentLoaded', function() {
+            let canvas = document.getElementById("screen");
+            let ctx = canvas.getContext("2d");
+            let ballRadius = 10;
+            let x = canvas.width / 2;
+            let y = canvas.height - 30;
+            let dx = 2;
+            let dy = -2;
+            let paddleHeight = 10;
+            let paddleWidth = 75;
+            let paddleX = (canvas.width - paddleWidth) / 2;
+            let rightPressed = false;
+            let leftPressed = false;
+            let score = 0;
+
+            document.addEventListener("keydown", keyDownHandler, false);
+            document.addEventListener("keyup", keyUpHandler, false);
+
+            document.getElementById('startBtn').addEventListener('click', function() {
+                if (!gameStarted) {
+                    gameStarted = true;
+                    gameInterval = setInterval(draw, 10);
+                }
+            });
+
+            document.getElementById('stopBtn').addEventListener('click', function() {
+                if (gameStarted) {
+                    clearInterval(gameInterval);
+                    gameStarted = false;
+                    alert('Game has been stopped. Refresh the page to play again.');
+                }
+            });
+
+            function keyDownHandler(e) {
+                if (e.key === "Right" || e.key === "ArrowRight") {
+                    rightPressed = true;
+                } else if (e.key === "Left" || e.key === "ArrowLeft") {
+                    leftPressed = true;
+                }
+            }
+
+            function keyUpHandler(e) {
+                if (e.key === "Right" || e.key === "ArrowRight") {
+                    rightPressed = false;
+                } else if (e.key === "Left" || e.key === "ArrowLeft") {
+                    leftPressed = false;
+                }
+            }
+
+            function drawBall() {
+                ctx.beginPath();
+                ctx.arc(x, y, ballRadius, 0, Math.PI*2);
+                ctx.fillStyle = "#0095DD";
+                ctx.fill();
+                ctx.closePath();
+            }
+
+            function drawPaddle() {
+                ctx.beginPath();
+                ctx.rect(paddleX, canvas.height-paddleHeight, paddleWidth, paddleHeight);
+                ctx.fillStyle = "#0095DD";
+                ctx.fill();
+                ctx.closePath();
+            }
+
+            function drawScore() {
+                ctx.font = "16px Arial";
+                ctx.fillStyle = "#0095DD";
+                ctx.fillText("Score: "+score, 8, 20);
+            }
+
+            function draw() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                drawBall();
+                drawPaddle();
+                drawScore();
+
+                if(rightPressed && paddleX < canvas.width-paddleWidth) {
+                    paddleX += 7;
+                } else if(leftPressed && paddleX > 0) {
+                    paddleX -= 7;
+                }
+
+                if(x + dx > canvas.width-ballRadius || x + dx < ballRadius) {
+                    dx = -dx;
+                }
+                if(y + dy > canvas.height-ballRadius || y + dy < ballRadius) {
+                    dy = -dy;
+                }
+
+                x += dx;
+                y += dy;
+            }
+        });
+
+        // Basic StudyQuestz Game Setup
+        let flashcards = [];
+
+        function addFlashcard() {
+            let term = prompt("Enter term:");
+            let definition = prompt("Enter definition:");
+            flashcards.push({ term, definition });
+            displayFlashcards();
+        }
+
+        function startQuiz() {
+            if (flashcards.length === 0) {
+                alert("Please add some flashcards first!");
+                return;
+            }
+            let flashcard = flashcards[Math.floor(Math.random() * flashcards.length)];
+            let userAnswer = prompt("What is the definition of " + flashcard.term + "?");
+            if (userAnswer.toLowerCase() === flashcard.definition.toLowerCase()) {
+                alert("Correct!");
+            } else {
+                alert("Incorrect. The correct answer is: " + flashcard.definition);
+            }
+        }
+
+        function displayFlashcards() {
+            let container = document.getElementById("flashcardsContainer");
+            container.innerHTML = ''; // Clear existing flashcards
+            flashcards.forEach(function(flashcard) {
+                let cardElement = document.createElement("div");
+                cardElement.classList.add("flashcard");
+                cardElement.textContent = flashcard.term + ": " + flashcard.definition;
+                container.appendChild(cardElement);
+            });
+        }
+    </script>
+</body>
+</html>
