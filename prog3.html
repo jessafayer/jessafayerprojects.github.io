@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <title>Cat Viewer</title>
+  </head>
+  <body>
+    <h1 class="center">Check it</h1>
+    <script>
+      function firstPic() {
+          count = 0;
+        document.getElementById("pic").src = "images/" + photos[0];
+      }
+      function nextPic() {
+          if (count === photos.length - 1) {
+              count = 0;
+          } else {
+              count++;
+          }
+          document.getElementById("pic").src = "images/" + photos[count]; 
+      }
+      function prevPic() {
+        if (count === 0) {
+              count = photos.length - 1;
+          } else {
+              count--;
+          }
+          document.getElementById("pic").src = "images/" + photos[count]; 
+      }
+      const photos = [
+        "cat1.jpg",
+        "cat2.jpg",
+        "cat3.jpg",
+        "cat4.jpg",
+        "cat5.jpg",
+      ];
+      let count = 0;
+    </script>
+    <img id="pic" class="center" src="images/cat1.jpg" width="500" height="600" />
+    <br/>
+    <button id="button1" class="center" onclick="firstPic()">FirstPhoto</button>
+    <button id="button2" class="center" onclick="nextPic()">NextPhoto</button>
+    <button id="button3" class="center" onclick="prevPic()">PreviousPhoto</button>
+  </body>
+</html>

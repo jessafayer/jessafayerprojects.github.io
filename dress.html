@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Which Doll Are You?</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        
+        #game-container {
+            margin-top: 50px;
+            background-image: url('IMG_5146.jpg'); /* Replace 'IMG_5146.jpg' with your doll background image */
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+        }
+        
+        #question-container {
+            margin-bottom: 20px;
+        }
+        
+        .activity {
+            margin: 0 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            color: pink; /* Set the color of the text to pink */
+        }
+        
+        #doll-container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <h1>Which Doll Are You?</h1>
+        <div id="question-container">
+            <p>What's your favorite activity?</p>
+            <button class="activity" onclick="selectDoll('Listening to music in the rain')">Listening to music in the rain</button>
+            <button class="activity" onclick="selectDoll('Listening to music in candlelight')">Listening to music in candlelight</button>
+            <button class="activity" onclick="selectDoll('Listening to music while taking photos')">Listening to music while taking photos</button>
+        </div>
+        <div id="doll-container">
+            <img src="default.png" id="doll-img" alt="Doll">
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        let dollImg = document.getElementById('doll-img');
+
+        function selectDoll(activity) {
+            let dollUrl;
+            switch (activity) {
+                case 'Listening to music in the rain':
+                    dollUrl = 'IMG_5147.jpg';
+                    break;
+                case 'Listening to music in candlelight':
+                    dollUrl = 'IMG_5148.jpg';
+                    break;
+                case 'Listening to music while taking photos':
+                    dollUrl = 'IMG_5149.jpg';
+                    break;
+                default:
+                    break;
+            }
+            if (dollUrl) {
+                dollImg.src = dollUrl;
+            }
+        }
+    </script>
+</body>
+</html>
