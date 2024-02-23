@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#game-container {
+    margin-top: 50px;
+    background-image: url('IMG_5146.jpg'); /* Replace 'background.jpg' with your doll background image */
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+#question-container {
+    margin-bottom: 20px;
+}
+
+.activity {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#doll-container {
+    margin-top: 20px;
+}
